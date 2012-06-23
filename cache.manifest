@@ -1,9 +1,8 @@
-CACHE MAINFEST
+CACHE MANIFEST
 
-index.html
 js/jquery.js
-js/jquery.mobile-1.1.0.min.js
-css/themes/default/jquery.mobile-1.1.0.min.css
+js/jquery.mobile-1.1.0.js
+css/themes/default/jquery.mobile-1.1.0.css
 css/themes/default/images/ajax-loader.png
 css/themes/default/images/ajax-loader.gif
 css/themes/default/images/icons-18-black.png

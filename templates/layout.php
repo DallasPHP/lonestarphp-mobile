@@ -13,7 +13,7 @@
             });
         });
     </script>
-    <script src="js/jquery.mobile-1.1.0.min.js"></script>
+    <script src="js/jquery.mobile-1.1.0.js"></script>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -28,9 +28,9 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144.png">
 
     <!-- For non-Retina iPhone, iPod Touch -->
-    <link rel="apple-touch-startup-image" href="splash-screen-320.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 320px)" href="splash-screen-320.png" />
     <!-- For Retina iPhone, iPod Touch -->
-    <link rel="apple-touch-startup-image" sizes="640x960" href="splash-screen-640.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" href="splash-screen-640.png" />
 </head>
 <body>
     
