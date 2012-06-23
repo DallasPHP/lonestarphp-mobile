@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LoneStar PHP 2012</title>
     <link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.1.0.css" />
+    <link rel="stylesheet"  href="css/site.css" />
     <script src="js/jquery.js"></script>
     <script>
         $(document).bind("mobileinit", function(){
@@ -37,15 +38,15 @@
 <div data-role="page" id="home">
     <?php print $header; ?>
     <div data-role="content">
-
-
+        
+        <div class="logo">Lone Star PHP 2012</div>
+        
         <ul data-role="listview" data-inset="true">
             <li><a href="#schedule">Schedule</a></li>
             <li><a href="#">Topics</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Speakers</a></li>
         </ul>
-
     </div>
 </div>
 

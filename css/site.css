@@ -1,0 +1,16 @@
+#home .logo {
+    text-indent:-9999px;
+    display: block;
+    margin:0;
+    padding:0;
+    background: url(../images/lsp-logo.png) top center no-repeat;
+    
+    height: 143px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    #home .logo {
+        background: url(../images/lsp-logo@2x.png) top center no-repeat;
+        background-size: 175px 143px;
+    }
+}
