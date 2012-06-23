@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html manifest="cache.manifest.php">
+<html manifestm="cache.manifest.php">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LoneStar PHP 2012</title>
-    <link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.1.0.css" />
+    <link rel="stylesheet"  href="css/themes/lsp12/lsp12.css" />
+    <link rel="stylesheet"  href="css/themes/default/jquery.mobile.structure-1.1.0.css" />
     <link rel="stylesheet"  href="css/site.css" />
     <script src="js/jquery.js"></script>
     <script>
@@ -41,7 +42,7 @@
         
         <div class="logo">Lone Star PHP 2012</div>
         
-        <ul data-role="listview" data-inset="true">
+        <ul data-role="listview" data-inset="true" data-theme="c">
             <li><a href="#schedule">Schedule</a></li>
             <li><a href="#">Topics</a></li>
             <li><a href="#">Events</a></li>
