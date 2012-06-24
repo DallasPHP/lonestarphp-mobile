@@ -29,3 +29,12 @@ body {
         background-size: 175px 143px;
     }
 }
+
+
+
+/* ** */
+
+
+.ui-content .ui-collapsible .ui-listview {
+    margin: -10px -16px -10px -16px;
+}

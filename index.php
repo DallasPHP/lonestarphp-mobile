@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('America/Chicago');
 set_include_path(
 	dirname(__FILE__) . PATH_SEPARATOR .
 	get_include_path()
@@ -18,7 +19,9 @@ function render($file, $args = array(), $use_cache = true) {
 		
 		ob_start();
 		include $file;
-		$cache[$file] = ob_get_clean();
+		
+		if ($use_cache)
+			$cache[$file] = ob_get_clean();
 	}
 	
 	return $cache[$file];
@@ -26,5 +29,8 @@ function render($file, $args = array(), $use_cache = true) {
 
 global $header;
 $header = render("templates/header.php");
+
+
+include 'data.php';
 
 echo render('templates/layout.php');

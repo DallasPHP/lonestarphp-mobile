@@ -37,15 +37,17 @@
 <body>
     
 <div data-role="page" id="home">
-    <?php print $header; ?>
+    <div data-role="header" data-theme="d">
+        
+    </div>
     <div data-role="content">
         
         <div class="logo">Lone Star PHP 2012</div>
         
         <ul data-role="listview" data-inset="true" data-theme="c">
             <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#">Topics</a></li>
-            <li><a href="#">Events</a></li>
+            <li><a href="#">Session List</a></li>
+            <li><a href="#">Events &amp; Meals</a></li>
             <li><a href="#">Speakers</a></li>
         </ul>
     </div>
