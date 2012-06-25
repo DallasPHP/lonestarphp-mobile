@@ -1,3 +1,21 @@
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/* ** JQUERY UI OVERRIDES/PATCHES ** */
+
+.ui-content .ui-collapsible .ui-listview {
+    margin: -10px -16px -10px -16px;
+}
+
+/* ** HOME ** */
 body {
     font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
 }
@@ -30,11 +48,39 @@ body {
     }
 }
 
+/* ** SCHEDULE ** */
 
 
-/* ** */
+/* ** SESSION ** */
+.time-heading {
+    box-sizing: border-box;
+    
+    margin: -15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1.15em;
+    font-weight: bold;
+    
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    
+    text-align: center;
+}
 
+.session {
+    
+}
 
-.ui-content .ui-collapsible .ui-listview {
-    margin: -10px -16px -10px -16px;
+.session hgroup h2, .session hgroup h3 {
+    margin:0;
+}
+
+.session .details {
+    float: right;
+    text-align: right;
+}
+
+.session .details .room {
+    display: block;
+    text-transform: uppercase;
 }
