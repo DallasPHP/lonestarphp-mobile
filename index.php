@@ -10,7 +10,9 @@ function render($file, $args = array(), $use_cache = true) {
 	
 	if (!isset($cache)) $cache = array();
 	
-	if (!$use_cache || !isset($cache[$file])) {
+	$cache_key = sha1($file.serialize($args));
+	
+	if (!$use_cache || !isset($cache[$cache_key])) {
 		if (!file_exists($file))
 			return "";
 		
@@ -21,15 +23,13 @@ function render($file, $args = array(), $use_cache = true) {
 		include $file;
 		
 		if ($use_cache)
-			$cache[$file] = ob_get_clean();
+			$cache[$cache_key] = ob_get_clean();
+		else
+			return ob_get_clean();
 	}
 	
-	return $cache[$file];
+	return $cache[$cache_key];
 }
-
-global $header;
-$header = render("templates/header.php");
-
 
 include 'data.php';
 

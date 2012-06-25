@@ -2,7 +2,7 @@
 <html manifest="cache.manifest.php">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>LoneStar PHP 2012</title>
     <link rel="stylesheet"  href="css/themes/lsp12/lsp12.css" />
     <link rel="stylesheet"  href="css/themes/default/jquery.mobile.structure-1.1.0.css" />
@@ -34,12 +34,11 @@
     <!-- For Retina iPhone, iPod Touch -->
     <link rel="apple-touch-startup-image" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" href="splash-screen-640.png" />
 </head>
+
 <body>
     
 <div data-role="page" id="home">
-    <div data-role="header" data-theme="d">
-        
-    </div>
+    <?php print render('templates/header.php'); ?>
     <div data-role="content">
         
         <div class="logo">Lone Star PHP 2012</div>

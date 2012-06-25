@@ -10,9 +10,33 @@
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 /* ** JQUERY UI OVERRIDES/PATCHES ** */
+.ui-collapsible-content {
+    position:static;
+    overflow: hidden;
+}
+
+.ui-collapsible-content.ui-corner-bottom li:last-child {
+    -moz-border-radius-bottomleft: .6em /*{global-radii-blocks}*/;
+	-webkit-border-bottom-left-radius: .6em /*{global-radii-blocks}*/;
+	border-bottom-left-radius: .6em /*{global-radii-blocks}*/;
+	-moz-border-radius-bottomright: .6em /*{global-radii-blocks}*/;
+	-webkit-border-bottom-right-radius: .6em /*{global-radii-blocks}*/;
+	border-bottom-right-radius: .6em /*{global-radii-blocks}*/;
+}
 
 .ui-content .ui-collapsible .ui-listview {
-    margin: -10px -16px -10px -16px;
+    margin: -10px -16px -11px -16px;
+}
+
+/* ** GLOBAL ** */
+.ui-header .hash {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    
+    color: #fff;
+    text-decoration: none;
 }
 
 /* ** HOME ** */
@@ -49,7 +73,10 @@ body {
 }
 
 /* ** SCHEDULE ** */
-
+#schedule .ui-body-c,
+.session-page .ui-body-c {
+    background: #fafafa;
+}
 
 /* ** SESSION ** */
 .time-heading {
@@ -68,19 +95,18 @@ body {
 }
 
 .session {
-    
+    margin: 0 0 30px 0;
 }
 
 .session hgroup h2, .session hgroup h3 {
     margin:0;
 }
 
-.session .details {
-    float: right;
-    text-align: right;
+.session hgroup h3 {
+    font-weight: normal;
 }
 
-.session .details .room {
-    display: block;
+.session h4 .room {
+    float: right;
     text-transform: uppercase;
 }

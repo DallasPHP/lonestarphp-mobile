@@ -1,5 +1,5 @@
 <div data-role="page" data-add-back-btn="true" id="schedule">
-    <?php print $header; ?>
+    <?php print render('templates/header.php', array('title' => 'Schedule')); ?>
     <div data-role="content">
         
         <div data-role="collapsible-set" data-theme="b" data-content-theme="c" data-iconpos="right">
@@ -23,12 +23,13 @@
                 <?php if (count($timeslot['talks']) > 0): ?>
                     <a href="#<?php echo $day . '-' . $hour; ?>">
                         <h3><?php echo date('g:i A', $time); ?><?php echo $end ? ' - ' . date('g:i A', $end) : '' ?></h3>
-                        <p><strong><?php echo strtoupper($timeslot['type']); ?></strong></p>
+                        <p><strong><?php echo strtoupper($timeslot['type']); ?></strong><?php if ($timeslot['room']): ?> | <?php echo strtoupper($timeslot['room']); ?><?php endif; ?></p>
                     </a>
                 <?php else: ?>
                     <h3><?php echo date('g:i A', $time); ?><?php echo $end ? ' - ' . date('g:i A', $end) : '' ?></h3>
-                    <p><strong><?php echo strtoupper($timeslot['type']); ?></strong></p>
+                    <p><strong><?php echo strtoupper($timeslot['type']); ?></strong> <?php if ($timeslot['room']): ?> | <?php echo strtoupper($timeslot['room']); ?><?php endif; ?></p>
                 <?php endif; ?>
+                
                 </li>
             <?php endforeach; ?>
             </ul>
@@ -52,8 +53,8 @@
     else
         $end = false;
 ?>
-<div data-role="page" data-add-back-btn="true" id="<?php echo $day . '-' . $hour; ?>">
-    <?php print $header; ?>
+<div data-role="page" data-add-back-btn="true" id="<?php echo $day . '-' . $hour; ?>" class="session-page">
+    <?php print render('templates/header.php', array('title' => date('l', $date))); ?>
     <div data-role="content">
 
         <div class="time-heading">
@@ -67,11 +68,10 @@
                 <h3><?php echo $talk['presenter']; ?></h2>
             </hgroup>
             
-            <p><?php echo $talk['description']; ?></p>
-            
-            <div class="details">
-                <span class="room"><?php echo $talk['room']; ?></span>
-                <a href="<?php echo $talk['joindin']; ?>" class="joindin" rel="external" target="_blank"><?php echo $talk['joindin']; ?></a>
+            <div data-role="collapsible" data-mini="true" data-content-theme="c">
+                <h4>Details <span class="room"><?php echo $talk['room']; ?></span></h4>
+                <p><?php echo $talk['description']; ?></p>
+                <a href="<?php echo $talk['joindin']; ?>" class="joindin" rel="external" target="_blank" data-role="button" data-icon="star" data-mini="true">Rate on Joind.In</a>
             </div>
         </div>
         <?php endforeach; ?>
