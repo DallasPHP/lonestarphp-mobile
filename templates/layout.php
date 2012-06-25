@@ -1,13 +1,15 @@
-<!DOCTYPE html>
+<?php
+$version = file_get_contents('site.version');
+?><!DOCTYPE html>
 <html manifest="cache.manifest.php">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>LoneStar PHP 2012</title>
-    <link rel="stylesheet"  href="css/themes/lsp12/lsp12.css" />
-    <link rel="stylesheet"  href="css/themes/default/jquery.mobile.structure-1.1.0.css" />
-    <link rel="stylesheet"  href="css/site.css" />
-    <script src="js/jquery.js"></script>
+    <link rel="stylesheet"  href="css/themes/lsp12/lsp12.css?<?php echo $version; ?>" />
+    <link rel="stylesheet"  href="css/themes/default/jquery.mobile.structure-1.1.0.css?<?php echo $version; ?>" />
+    <link rel="stylesheet"  href="css/site.css?<?php echo $version; ?>" />
+    <script src="js/jquery.js?<?php echo $version; ?>"></script>
     <script>
         $(document).bind("mobileinit", function(){
             $.extend($.mobile, {
@@ -15,24 +17,24 @@
             });
         });
     </script>
-    <script src="js/jquery.mobile-1.1.0.js"></script>
+    <script src="js/jquery.mobile-1.1.0.js?<?php echo $version; ?>"></script>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png?<?php echo $version; ?>">
     <!-- For first- and second-generation iPad: -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72.png?<?php echo $version; ?>">
     <!-- For iPhone with high-resolution Retina display: -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114.png?<?php echo $version; ?>">
     <!-- For third-generation iPad with high-resolution Retina display: -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144.png?<?php echo $version; ?>">
 
     <!-- For non-Retina iPhone, iPod Touch -->
-    <link rel="apple-touch-startup-image" media="(device-width: 320px)" href="splash-screen-320.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 320px)" href="splash-screen-320.png?<?php echo $version; ?>" />
     <!-- For Retina iPhone, iPod Touch -->
-    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" href="splash-screen-640.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" href="splash-screen-640.png?<?php echo $version; ?>" />
 </head>
 
 <body>
