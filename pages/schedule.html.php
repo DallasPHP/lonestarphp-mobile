@@ -1,5 +1,5 @@
-<div data-role="page" data-add-back-btn="true" id="schedule">
-    <?php print render('templates/header.php', array('title' => 'Schedule')); ?>
+<div data-role="page" id="schedule">
+    <?php print render('templates/header.php', array('title' => 'Schedule', 'back' => '#home')); ?>
     <div data-role="content">
         
         <div data-role="collapsible-set" data-theme="b" data-content-theme="c" data-iconpos="right">
@@ -53,8 +53,8 @@
     else
         $end = false;
 ?>
-<div data-role="page" data-add-back-btn="true" id="<?php echo $day . '-' . $hour; ?>" class="session-page">
-    <?php print render('templates/header.php', array('title' => date('l', $date))); ?>
+<div data-role="page" id="<?php echo $day . '-' . $hour; ?>" class="session-page">
+    <?php print render('templates/header.php', array('title' => date('l', $date), 'back' => '#schedule')); ?>
     <div data-role="content">
 
         <div class="time-heading">
@@ -65,7 +65,7 @@
         <div class="session clearfix">
             <hgroup>
                 <h2><?php echo $talk['title']; ?></h2>
-                <h3><?php echo $talk['presenter']; ?></h2>
+                <h3><?php echo $talk['presenter']; ?></h3>
             </hgroup>
             
             <div data-role="collapsible" data-mini="true" data-content-theme="c">

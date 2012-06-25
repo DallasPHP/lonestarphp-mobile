@@ -10,6 +10,10 @@
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 /* ** JQUERY UI OVERRIDES/PATCHES ** */
+.ui-body-c {
+    background: #fafafa;
+}
+
 .ui-collapsible-content {
     position:static;
     overflow: hidden;
@@ -73,10 +77,7 @@ body {
 }
 
 /* ** SCHEDULE ** */
-#schedule .ui-body-c,
-.session-page .ui-body-c {
-    background: #fafafa;
-}
+
 
 /* ** SESSION ** */
 .time-heading {
@@ -109,4 +110,45 @@ body {
 .session h4 .room {
     float: right;
     text-transform: uppercase;
+}
+
+/* ** SESSIONS ** */
+#sessions .ui-collapsible-set {
+    margin: -15px;
+}
+
+#sessions .ui-collapsible .ui-collapsible-heading .ui-btn-inner {
+    padding-left: 15px;
+}
+
+#sessions .ui-collapsible .ui-collapsible-heading .ui-btn-inner .ui-icon {
+    right: 15px;
+}
+
+#sessions hgroup h2, #sessions hgroup h3 {
+    margin:0;
+}
+
+#sessions hgroup h3 {
+    font-weight: normal;
+}
+
+#sessions .schedule {
+    margin-top: 10px;
+    
+    font-size: 0.85em;
+}
+
+#sessions .schedule .date {
+}
+
+#sessions .schedule .time {
+}
+
+#sessions .schedule .room {
+    float: right;
+}
+
+#sessions .ui-collapsible-content p {
+    margin-top: 10px;
 }
