@@ -32,5 +32,6 @@ function render($file, $args = array(), $use_cache = true) {
 }
 
 include 'data.php';
+$GLOBALS['version'] = file_get_contents('site.version');
 
 echo render('templates/layout.php');

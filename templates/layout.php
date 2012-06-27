@@ -1,6 +1,4 @@
-<?php
-$version = file_get_contents('site.version');
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html manifest="cache.manifest.php">
 <head>
     <meta charset="utf-8">
@@ -49,7 +47,7 @@ $version = file_get_contents('site.version');
             <li><a href="#schedule">Schedule</a></li>
             <li><a href="#sessions">Session List</a></li>
             <li><a href="#">Events &amp; Meals</a></li>
-            <li><a href="#">Speakers</a></li>
+            <li><a href="#speakers">Speakers</a></li>
         </ul>
     </div>
 </div>

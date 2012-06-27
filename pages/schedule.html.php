@@ -2,12 +2,12 @@
     <?php print render('templates/header.php', array('title' => 'Schedule', 'back' => '#home')); ?>
     <div data-role="content">
         
-        <div data-role="collapsible-set" data-theme="b" data-content-theme="c" data-iconpos="right">
+        <div data-role="collapsible-set" data-theme="b" data-content-theme="c" data-iconpos="right" id="dayset">
         <?php foreach ($data['schedule'] as $day => $schedule): ?>
             <?php
                 $date = strtotime($day);
             ?>
-            <div data-role="collapsible" data-collapsed="true" data-date="<?php echo $date; ?>">
+            <div class="day" data-role="collapsible" data-collapsed="true" data-date="<?php echo date('nj', $date); ?>">
             <h3><?php echo date('l, F jS', $date); ?></h3>
             
             <ul data-role="listview" data-theme="c">
@@ -19,7 +19,7 @@
                     else
                         $end = false;
                 ?>
-                <li>
+                <li data-hour="<?php echo (int)date('G', $time)*60 + (int)date('i', $time); ?>">
                 <?php if (count($timeslot['talks']) > 0): ?>
                     <a href="#<?php echo $day . '-' . $hour; ?>">
                         <h3><?php echo date('g:i A', $time); ?><?php echo $end ? ' - ' . date('g:i A', $end) : '' ?></h3>
@@ -40,6 +40,30 @@
 
     </div>
 </div>
+<script>
+$('#schedule').on('pageinit', function(){
+    var date = new Date()
+      , dateDiscr = [date.getMonth()+1,date.getDate()].join('')
+      , hourDiscr = (date.getHours()) * 60 + (date.getMinutes() - 15)
+      , $match = $('#schedule').find('.day[data-date=' + dateDiscr + ']');
+    
+    if ($match.length > 0) {
+        $match.trigger('expand');
+        
+        $match.find('[data-hour]').each(function(){
+            var $this = $(this);
+            if ($this.data('hour') >= hourDiscr) {
+                $this.addClass('on-deck');
+                return false;
+            }
+        })
+        
+    } else {
+        $('#schedule .day').first().trigger('expand');
+    }
+});
+</script>
+
 
 <?php foreach ($data['schedule'] as $day => $schedule): ?>
 <?php foreach ($schedule as $hour => $timeslot): ?>
