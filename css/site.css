@@ -81,6 +81,27 @@ body {
     background: #FCECE9;
 }
 
+#schedule .ui-collapsible-set {
+    margin: -15px;
+}
+
+#schedule .ui-collapsible .ui-collapsible-heading,
+#schedule .ui-collapsible .ui-collapsible-heading .ui-btn-inner {
+    background-color: #494B42;
+}
+
+#schedule .ui-collapsible .ui-collapsible-heading-toggle {
+    border-color: #494B42;
+}
+
+#schedule .ui-collapsible .ui-collapsible-heading .ui-btn-inner {
+    padding-left: 15px;
+}
+
+#schedule .ui-collapsible .ui-collapsible-heading .ui-btn-inner .ui-icon {
+    right: 15px;
+}
+
 /* ** SESSION ** */
 .time-heading {
     box-sizing: border-box;

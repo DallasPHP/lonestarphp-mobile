@@ -46,7 +46,6 @@
         <ul data-role="listview" data-inset="true" data-theme="c">
             <li><a href="#schedule">Schedule</a></li>
             <li><a href="#sessions">Session List</a></li>
-            <li><a href="#">Events &amp; Meals</a></li>
             <li><a href="#speakers">Speakers</a></li>
         </ul>
     </div>
