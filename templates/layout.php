@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="cache.manifest.php">
+<html <?php /*manifest="cache.manifest.php"*/ ?>>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -23,7 +23,7 @@
     <script>
         $(document).bind("mobileinit", function(){
             $.extend($.mobile, {
-                defaultPageTransition: 'slide'
+                defaultPageTransition: 'fade'
             });
         });
     </script>
