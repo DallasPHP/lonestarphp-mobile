@@ -7,6 +7,18 @@
     <link rel="stylesheet"  href="css/themes/lsp12/lsp12.css?<?php echo $version; ?>" />
     <link rel="stylesheet"  href="css/themes/default/jquery.mobile.structure-1.1.0.css?<?php echo $version; ?>" />
     <link rel="stylesheet"  href="css/site.css?<?php echo $version; ?>" />
+    <link rel="stylesheet" href="css/add2home.css?<?php echo $version; ?>" />
+    <script type="text/javascript">
+    var addToHomeConfig = {
+        animationIn: 'fade',
+        animationOut: 'drop',
+        lifespan:10000,
+        expire:2,
+        touchIcon:true,
+        message:'Install this offline app to your %device. Tap `%icon` and then `<strong>Add to Home Screen</strong>`.'
+    };
+    </script>
+    <script type="application/javascript" src="js/add2home.js?<?php echo $version; ?>" async></script>
     <script src="js/jquery.js?<?php echo $version; ?>"></script>
     <script>
         $(document).bind("mobileinit", function(){
