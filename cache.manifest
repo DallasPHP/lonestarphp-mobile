@@ -1,8 +1,8 @@
 CACHE MANIFEST
 
-images/lsp-logo.png
-images/lsp-logo@2x.png
-images/bg.png
+images/lsp-logo.png?[[version]]
+images/lsp-logo@2x.png?[[version]]
+images/bg.png?[[version]]
 js/jquery.js?[[version]]
 js/jquery.mobile-1.1.0.js?[[version]]
 css/site.css?[[version]]
