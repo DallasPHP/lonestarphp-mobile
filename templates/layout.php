@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>LoneStar PHP 2012</title>
-    <link rel="stylesheet"  href="css/themes/lsp12/lsp12.css?<?php echo $version; ?>" />
-    <link rel="stylesheet"  href="css/themes/default/jquery.mobile.structure-1.1.0.css?<?php echo $version; ?>" />
+    <link rel="stylesheet"  href="css/themes/lsp12/lsp12.min.css?<?php echo $version; ?>" />
+    <link rel="stylesheet"  href="css/themes/default/jquery.mobile.structure-1.1.0.min.css?<?php echo $version; ?>" />
     <link rel="stylesheet"  href="css/site.css?<?php echo $version; ?>" />
     <link rel="stylesheet" href="css/add2home.css?<?php echo $version; ?>" />
     <script type="text/javascript">
@@ -19,7 +19,7 @@
     };
     </script>
     <script type="application/javascript" src="js/add2home.js?<?php echo $version; ?>" async></script>
-    <script src="js/jquery.js?<?php echo $version; ?>"></script>
+    <script src="js/jquery.min.js?<?php echo $version; ?>"></script>
     <script>
         $(document).bind("mobileinit", function(){
             $.extend($.mobile, {
@@ -27,7 +27,7 @@
             });
         });
     </script>
-    <script src="js/jquery.mobile-1.1.0.js?<?php echo $version; ?>"></script>
+    <script src="js/jquery.mobile-1.1.0.min.js?<?php echo $version; ?>"></script>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />

@@ -3,11 +3,11 @@ CACHE MANIFEST
 images/lsp-logo.png?[[version]]
 images/lsp-logo@2x.png?[[version]]
 images/bg.png?[[version]]
-js/jquery.js?[[version]]
-js/jquery.mobile-1.1.0.js?[[version]]
+js/jquery.min.js?[[version]]
+js/jquery.mobile-1.1.0.min.js?[[version]]
 css/site.css?[[version]]
-css/themes/lsp12/lsp12.css?[[version]]
-css/themes/default/jquery.mobile.structure-1.1.0.css?[[version]]
+css/themes/lsp12/lsp12.min.css?[[version]]
+css/themes/default/jquery.mobile.structure-1.1.0.min.css?[[version]]
 css/themes/lsp12/images/ajax-loader.gif
 css/themes/lsp12/images/icons-18-black.png
 css/themes/lsp12/images/icons-18-white.png
