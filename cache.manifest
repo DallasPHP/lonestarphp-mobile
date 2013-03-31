@@ -3,16 +3,16 @@ CACHE MANIFEST
 images/lsp-logo.png?[[version]]
 images/lsp-logo@2x.png?[[version]]
 images/bg.png?[[version]]
-js/jquery.min.js?[[version]]
-js/jquery.mobile-1.1.0.min.js?[[version]]
-css/site.css?[[version]]
-css/themes/lsp12/lsp12.min.css?[[version]]
-css/themes/default/jquery.mobile.structure-1.1.0.min.css?[[version]]
-css/themes/lsp12/images/ajax-loader.gif
-css/themes/lsp12/images/icons-18-black.png
-css/themes/lsp12/images/icons-18-white.png
-css/themes/lsp12/images/icons-36-black.png
-css/themes/lsp12/images/icons-36-white.png
+scripts/jquery.min.js?[[version]]
+scripts/jquery.mobile-1.3.0.min.js?[[version]]
+styles/site.css?[[version]]
+styles/themes/lsp13/lsp13.min.css?[[version]]
+styles/themes/default/jquery.mobile.structure-1.3.0.min.css?[[version]]
+styles/themes/lsp13/images/ajax-loader.gif
+styles/themes/lsp13/images/icons-18-black.png
+styles/themes/lsp13/images/icons-18-white.png
+styles/themes/lsp13/images/icons-36-black.png
+styles/themes/lsp13/images/icons-36-white.png
 images/speakers/cal.evans.jpg?[[version]]
 images/speakers/paul.jones.jpg?[[version]]
 images/speakers/chris.hartjes.jpg?[[version]]
@@ -33,7 +33,7 @@ images/speakers/omni.adams.jpg?[[version]]
 images/speakers/geoffrey.tran.jpg?[[version]]
 images/speakers/john.syrinek.jpg?[[version]]
 images/speakers/garrett.woodworth.jpg?[[version]]
-css/add2home.css?[[version]]
-js/add2home.js?[[version]]
+styles/add2home.css?[[version]]
+scripts/add2home.js?[[version]]
 
 #version[[version]]

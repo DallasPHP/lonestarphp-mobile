@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>LoneStar PHP 2012</title>
-    <link rel="stylesheet"  href="css/themes/lsp12/lsp12.min.css?<?php echo $version; ?>" />
-    <link rel="stylesheet"  href="css/themes/default/jquery.mobile.structure-1.1.0.min.css?<?php echo $version; ?>" />
-    <link rel="stylesheet"  href="css/site.css?<?php echo $version; ?>" />
-    <link rel="stylesheet" href="css/add2home.css?<?php echo $version; ?>" />
+    <title>LoneStar PHP 2013</title>
+    <link rel="stylesheet" href="styles/themes/lsp13/lsp13.min.css?<?php echo $version; ?>" />
+    <link rel="stylesheet" href="styles/themes/default/jquery.mobile.structure-1.3.0.min.css?<?php echo $version; ?>" />
+    <link rel="stylesheet" href="styles/site.css?<?php echo $version; ?>" />
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700,300|Sanchez' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="styles/add2home.css?<?php echo $version; ?>" />
     <script type="text/javascript">
     var addToHomeConfig = {
         animationIn: 'fade',
@@ -18,16 +19,16 @@
         message:'Install this offline app to your %device. Tap `%icon` and then `<strong>Add to Home Screen</strong>`.'
     };
     </script>
-    <script type="application/javascript" src="js/add2home.js?<?php echo $version; ?>" async></script>
-    <script src="js/jquery.min.js?<?php echo $version; ?>"></script>
+    <script type="application/javascript" src="scripts/add2home.js?<?php echo $version; ?>" async></script>
+    <script src="scripts/jquery.min.js?<?php echo $version; ?>"></script>
     <script>
         $(document).bind("mobileinit", function(){
             $.extend($.mobile, {
-                defaultPageTransition: 'fade'
+                defaultPageTransition: 'slide'
             });
         });
     </script>
-    <script src="js/jquery.mobile-1.1.0.min.js?<?php echo $version; ?>"></script>
+    <script src="scripts/jquery.mobile-1.3.0.min.js?<?php echo $version; ?>"></script>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -42,9 +43,9 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144.png?<?php echo $version; ?>">
 
     <!-- For non-Retina iPhone, iPod Touch -->
-    <link rel="apple-touch-startup-image" media="(device-width: 320px)" href="splash-screen-320.png?<?php echo $version; ?>" />
+    <link rel="apple-touch-startup-image" media="(device-width: 320px)" href="splash-screen-320.jpg?<?php echo $version; ?>" />
     <!-- For Retina iPhone, iPod Touch -->
-    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" href="splash-screen-640.png?<?php echo $version; ?>" />
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" href="splash-screen-640.jpg?<?php echo $version; ?>" />
 </head>
 
 <body>

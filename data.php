@@ -403,7 +403,7 @@ $data = array(
         ),
     ),
     'schedule' => array(
-        '2012-06-29' => array(
+        '2013-06-28' => array(
             '0800' => array(
                 'end' => false,
                 'type' => 'Registration',
@@ -416,22 +416,22 @@ $data = array(
                 'talks' => array(),
                 'room' => 'Sycamore',
             ),
-            '0920' => array(
-                'end' => '1010',
-                'type' => 'Keynote',
-                'talks' => array(1),
-                'room' => 'Sycamore',
+            '0930' => array(
+                'end' => '1020',
+                'type' => 'Session',
+                'talks' => array(),
+                'room' => null,
             ),
             '1030' => array(
                 'end' => '1120',
                 'type' => 'Session',
-                'talks' => array(2,24),
+                'talks' => array(),
                 'room' => null,
             ),
             '1130' => array(
                 'end' => '1220',
                 'type' => 'Session',
-                'talks' => array(3,4),
+                'talks' => array(),
                 'room' => null,
             ),
             '1220' => array(
@@ -440,52 +440,58 @@ $data = array(
                 'talks' => array(),
                 'room' => 'Sycamore',
             ),
-            '1345' => array(
-                'end' => '1435',
+            '1330' => array(
+                'end' => '1420',
                 'type' => 'Session',
-                'talks' => array(5,6),
+                'talks' => array(),
                 'room' => null,
             ),
-            '1445' => array(
-                'end' => '1535',
+            '1430' => array(
+                'end' => '1520',
                 'type' => 'Session',
-                'talks' => array(7,8),
+                'talks' => array(),
                 'room' => null,
             ),
-            '1545' => array(
-                'end' => '1635',
+            '1530' => array(
+                'end' => '1620',
                 'type' => 'Session',
                 'talks' => array(9,10),
                 'room' => null,
             ),
+            '1630' => array(
+                'end' => '1720',
+                'type' => 'Session',
+                'talks' => array(),
+                'room' => null,
+            ),
             '1730' => array(
-                'end' => '2030',
+                'end' => '2000',
                 'type' => 'After Party',
                 'talks' => array(),
                 'room' => 'Sycamore',
             ),
         ),
-        '2012-06-30' => array(
+        '2013-06-29' => array(
             '0900' => array(
                 'end' => '0950',
-                'type' => 'Keynote',
-                'talks' => array(11),
-                'room' => 'Sycamore',
+                'type' => 'Session',
+                'talks' => array(),
+                'room' => null,
             ),
             '1000' => array(
                 'end' => '1050',
                 'type' => 'Session',
-                'talks' => array(12,13),
+                'talks' => array(),
                 'room' => null,
             ),
             '1100' => array(
                 'end' => '1150',
                 'type' => 'Session',
-                'talks' => array(14,15),
+                'talks' => array(),
                 'room' => null,
             ),
-            '1200' => array(
-                'end' => '1320',
+            '1220' => array(
+                'end' => '1330',
                 'type' => 'Lunch',
                 'talks' => array(),
                 'room' => 'Sycamore',

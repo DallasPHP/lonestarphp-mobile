@@ -7,7 +7,7 @@
             <?php
                 $date = strtotime($day);
             ?>
-            <div class="day" data-role="collapsible" data-collapsed="true" data-date="<?php echo date('nj', $date); ?>">
+            <div class="day" data-role="collapsible" data-collapsed="true" data-date="<?php echo date('nj', $date); ?>" data-theme="b">
             <h3><?php echo date('l, F jS', $date); ?></h3>
             
             <ul data-role="listview" data-theme="c">
