@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>LoneStar PHP 2013</title>
+    <title>Lone Star PHP 2013</title>
     <link rel="stylesheet" href="styles/themes/lsp13/lsp13.min.css?<?php echo $version; ?>" />
     <link rel="stylesheet" href="styles/themes/default/jquery.mobile.structure-1.3.0.min.css?<?php echo $version; ?>" />
     <link rel="stylesheet" href="styles/site.css?<?php echo $version; ?>" />
@@ -16,7 +16,7 @@
         lifespan:10000,
         expire:2,
         touchIcon:true,
-        message:'Install this offline app to your %device. Tap `%icon` and then `<strong>Add to Home Screen</strong>`.'
+        message:'Install this offline app to your %device. Tap %icon and then <strong>Add to Home Screen</strong>.'
     };
     </script>
     <script type="application/javascript" src="scripts/add2home.js?<?php echo $version; ?>" async></script>
@@ -30,6 +30,7 @@
     </script>
     <script src="scripts/jquery.mobile-1.3.0.min.js?<?php echo $version; ?>"></script>
 
+    <meta name="apple-mobile-web-app-title" content="#lsp13">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
@@ -49,7 +50,7 @@
 </head>
 
 <body>
-    
+
 <div data-role="page" id="home">
     <?php print render('templates/header.php'); ?>
     <div data-role="content">
@@ -61,6 +62,9 @@
             <li><a href="#sessions">Session List</a></li>
             <li><a href="#speakers">Speakers</a></li>
         </ul>
+        
+        
+        
     </div>
 </div>
 

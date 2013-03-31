@@ -59,3 +59,126 @@
         background-size: 175px 143px;
     }
 }
+
+/* ** SESSION ** */
+.time-heading {
+    box-sizing: border-box;
+    
+    margin: -15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1.15em;
+    font-weight: bold;
+    
+    background: #000 url(../images/texture-jeans-dark.png);
+    text-shadow: none;
+    color: #fff;
+
+    
+    text-align: center;
+}
+
+.session {
+    margin: 0 0 30px 0;
+}
+
+.session hgroup h2, .session hgroup h3 {
+    margin:0;
+}
+
+.session hgroup h3 {
+    font-weight: normal;
+}
+
+.session h4 .room {
+    float: right;
+    text-transform: uppercase;
+}
+
+/* ** SESSIONS ** */
+#sessions hgroup h2, #sessions hgroup h3 {
+    margin:0;
+}
+
+#sessions hgroup h3 {
+    font-weight: normal;
+}
+
+#sessions .schedule {
+    margin-top: 10px;
+    
+    font-size: 0.85em;
+}
+
+#sessions .schedule .date {
+}
+
+#sessions .schedule .time {
+}
+
+#sessions .schedule .room {
+    float: right;
+}
+
+
+/* ** SPEAKERS ** */
+.speaker-page .details {
+    box-sizing: border-box;
+    
+    margin: -15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    
+    background: #000 url(../images/texture-jeans-dark.png);
+    text-shadow: none;
+    color: #fff;
+}
+
+.speaker-page .details a {
+    color: #FF4C33;
+}
+
+.speaker-page .details a:visited {
+    color: #FF4C33;
+}
+
+.speaker-page .details img {
+    width: 50px;
+    height: 50px;
+    
+    float: left;
+    
+    background: #ccc;
+    border: 4px solid white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.speaker-page .details hgroup {
+    margin-left: 62px;
+}
+
+.speaker-page .details hgroup h1,
+.speaker-page .details hgroup h2 {
+    margin:0;
+    padding:0;
+    line-height: 0.8em;
+}
+
+.speaker-page .details hgroup h2 {
+    font-weight: normal;
+    line-height:1em;
+    margin-top: 4px;
+}
+
+.speaker-page .details .social {
+    margin-top: 15px;
+}
+
+.speaker-page .details .social a {
+    display: block;
+    margin: 0 0 5px 0;
+}
+
+.speaker-page .details .social a.twitter {
+    text-decoration: none;
+}

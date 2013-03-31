@@ -2,7 +2,7 @@
     <?php print render('templates/header.php', array('title' => 'Session List', 'back' => '#home')); ?>
     <div data-role="content">
 
-        <div data-role="collapsible-set" data-theme="c" data-content-theme="d" data-iconpos="right">
+        <div data-role="collapsible-set" data-theme="c" data-content-theme="a" data-iconpos="right">
         <?php $talks = $data['talks']; uasort($talks, function($a, $b) { if ($a['title'] == $b['title']) return 0; return ($a['title'] < $b['title']) ? -1 : 1; }); ?>
         <?php foreach ($talks as $id => $talk): ?>
             <?php

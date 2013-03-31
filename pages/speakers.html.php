@@ -30,6 +30,7 @@
 ?>
 <div data-role="page" id="speaker-<?php echo $id; ?>" class="speaker-page">
     <?php print render('templates/header.php', array('title' => $speaker['name'], 'back' => '#speakers')); ?>
+    
     <div data-role="content">
 
         <div class="details clearfix">

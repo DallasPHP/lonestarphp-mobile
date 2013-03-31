@@ -2,7 +2,7 @@
     <?php print render('templates/header.php', array('title' => 'Schedule', 'back' => '#home')); ?>
     <div data-role="content">
         
-        <div data-role="collapsible-set" data-theme="b" data-content-theme="c" data-iconpos="right" id="dayset">
+        <div data-role="collapsible-set" data-theme="b" data-content-theme="a" data-iconpos="right" id="dayset">
         <?php foreach ($data['schedule'] as $day => $schedule): ?>
             <?php
                 $date = strtotime($day);
