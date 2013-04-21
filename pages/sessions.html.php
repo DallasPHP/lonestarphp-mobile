@@ -7,7 +7,8 @@
         <?php foreach ($talks as $id => $talk): ?>
             <?php
                 $timeslot = $data['schedule'][$talk['date']][$talk['time']];
-                $date = strtotime($talk['date']);
+                list($date, $date_title) = array_pad(explode(':', $talk['date'], 2), 2, null);
+                $date = strtotime($date);
                 $time = strtotime($talk['time']);
                 if ($timeslot['end'])
                     $end = strtotime($timeslot['end']);
@@ -24,12 +25,15 @@
                 <div class="schedule clearfix">
                     <span class="room"><?php echo strtoupper($talk['room']); ?></span>
                     <span class="date"><?php echo date('l, F jS', $date); ?></span><br />
-                    <span class="time"><?php echo date('g:i A', $time); ?><?php echo $end ? ' - ' . date('g:i A', $end) : '' ?></span>
+                    <span class="time"><?php echo date('g:i A', $time); ?><?php echo $end ? ' - ' . date('g:i A', $end) : '' ?></span>
                     
                 </div>
                 
                 <p><?php echo $talk['description']; ?></p>
-                <a href="<?php echo $talk['joindin']; ?>" class="joindin" rel="external" target="_blank" data-role="button" data-icon="star" data-mini="true">Rate on Joind.In</a>
+                
+                <?php if ($talk['joindin']): ?>
+                    <a href="<?php echo $talk['joindin']; ?>" class="joindin" rel="external" target="_blank" data-role="button" data-icon="star" data-mini="true">Rate on Joind.In</a>
+                <?php endif; ?>
                 
             </div>
         <?php endforeach; ?>

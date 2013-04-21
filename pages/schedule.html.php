@@ -5,10 +5,11 @@
         <div data-role="collapsible-set" data-theme="b" data-content-theme="a" data-iconpos="right" id="dayset">
         <?php foreach ($data['schedule'] as $day => $schedule): ?>
             <?php
+                list($day,$title) = array_pad(explode(':', $day, 2), 2, null);
                 $date = strtotime($day);
             ?>
             <div class="day" data-role="collapsible" data-collapsed="true" data-date="<?php echo date('nj', $date); ?>" data-theme="b">
-            <h3><?php echo date('l, F jS', $date); ?></h3>
+            <h3><?php echo date('l, F jS', $date); ?><?php if ($title): ?> &mdash; <?php echo $title; ?><?php endif; ?></h3>
             
             <ul data-role="listview" data-theme="c">
             <?php foreach ($schedule as $hour => $timeslot): ?>
@@ -18,10 +19,17 @@
                         $end = strtotime($timeslot['end']);
                     else
                         $end = false;
+                    
+
+                    if ($title) {
+                        $talk_hash = sprintf("%s-%s-%s", strtolower(preg_replace("![^a-z0-9]+!i", "-", $title)), $day, $hour);
+                    } else {
+                        $talk_hash = sprintf("%s-%s", $day, $hour);
+                    }
                 ?>
                 <li data-hour="<?php echo (int)date('G', $time)*60 + (int)date('i', $time); ?>">
                 <?php if (count($timeslot['talks']) > 0): ?>
-                    <a href="#<?php echo $day . '-' . $hour; ?>">
+                    <a href="#<?php echo $talk_hash; ?>">
                         <h3><?php echo date('g:i A', $time); ?><?php echo $end ? ' - ' . date('g:i A', $end) : '' ?></h3>
                         <p><strong><?php echo strtoupper($timeslot['type']); ?></strong><?php if ($timeslot['room']): ?> | <?php echo strtoupper($timeslot['room']); ?><?php endif; ?></p>
                     </a>
@@ -66,41 +74,49 @@ $('#schedule').on('pageinit', function(){
 
 
 <?php foreach ($data['schedule'] as $day => $schedule): ?>
-<?php foreach ($schedule as $hour => $timeslot): ?>
-<?php
-    if (count($timeslot['talks']) == 0) continue;
+    <?php list($day,$title) = array_pad(explode(':', $day, 2), 2, null); ?>
+    <?php foreach ($schedule as $hour => $timeslot): ?>
+        <?php
+            if (count($timeslot['talks']) == 0) continue;
     
-    $date = strtotime($day);
-    $time = strtotime($hour);
-    if ($timeslot['end'])
-        $end = strtotime($timeslot['end']);
-    else
-        $end = false;
-?>
-<div data-role="page" id="<?php echo $day . '-' . $hour; ?>" class="session-page">
-    <?php print render('templates/header.php', array('title' => date('l', $date), 'back' => '#schedule')); ?>
-    <div data-role="content">
-
-        <div class="time-heading">
-            <?php echo date('g:i A', $time); ?><?php echo $end ? ' - ' . date('g:i A', $end) : '' ?>
-        </div>
-        
-        <?php foreach ($timeslot['talks'] as $talkId): $talk = $data['talks'][$talkId]; ?>
-        <div class="session clearfix">
-            <hgroup>
-                <h2><?php echo $talk['title']; ?></h2>
-                <h3><?php echo $talk['presenter']; ?></h3>
-            </hgroup>
+            $date = strtotime($day);
+            $time = strtotime($hour);
+            if ($timeslot['end'])
+                $end = strtotime($timeslot['end']);
+            else
+                $end = false;
             
-            <div data-role="collapsible" data-mini="true" data-content-theme="c">
-                <h4>Details <span class="room"><?php echo $talk['room']; ?></span></h4>
-                <p><?php echo $talk['description']; ?></p>
-                <a href="<?php echo $talk['joindin']; ?>" class="joindin" rel="external" target="_blank" data-role="button" data-icon="star" data-mini="true">Rate on Joind.In</a>
+            if ($title)
+                $talk_hash = sprintf("%s-%s-%s", strtolower(preg_replace("![^a-z0-9]+!i", "-", $title)), $day, $hour);
+            else
+                $talk_hash = sprintf("%s-%s", $day, $hour);
+        ?>
+        <div data-role="page" id="<?php echo $talk_hash; ?>" class="session-page">
+            <?php print render('templates/header.php', array('title' => date('l', $date), 'back' => '#schedule')); ?>
+            <div data-role="content">
+
+                <div class="time-heading">
+                    <?php echo date('g:i A', $time); ?><?php echo $end ? ' - ' . date('g:i A', $end) : '' ?>
+                </div>
+        
+                <?php foreach ($timeslot['talks'] as $talkId): $talk = $data['talks'][$talkId]; ?>
+                <div class="session clearfix">
+                    <hgroup>
+                        <h2><?php echo $talk['title']; ?></h2>
+                        <h3><?php echo $talk['presenter']; ?></h3>
+                    </hgroup>
+            
+                    <div data-role="collapsible" data-mini="true" data-content-theme="c">
+                        <h4>Details <span class="room"><?php echo $talk['room']; ?></span></h4>
+                        <p><?php echo $talk['description']; ?></p>
+                        <?php if ($talk['joindin']): ?>
+                            <a href="<?php echo $talk['joindin']; ?>" class="joindin" rel="external" target="_blank" data-role="button" data-icon="star" data-mini="true">Rate on Joind.In</a>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+
             </div>
         </div>
-        <?php endforeach; ?>
-
-    </div>
-</div>
-<?php endforeach; ?>
+    <?php endforeach; ?>
 <?php endforeach; ?>
