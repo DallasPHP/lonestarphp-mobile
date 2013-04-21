@@ -113,7 +113,7 @@ $data = array(
     	),
     	'13' => array(
     		"name" => "Juozas Kaziukėnas",
-    		"image" => "images/speakers/juozas.kaziukėnas.jpg",
+    		"image" => "images/speakers/juozas.jpg",
     		"company" => null,
     		"twitter" => "juokaz",
     		"website" => "http://juokaz.com",
@@ -176,7 +176,7 @@ $data = array(
     	),
     	'20' => array(
     		"name" => "Beth Tucker Long",
-    		"image" => "images/speakers/beth.tucker long.jpg",
+    		"image" => "images/speakers/beth.tuckerlong.jpg",
     		"company" => null,
     		"twitter" => "e3betht",
     		"website" => "http://www.treelinedesign.com",

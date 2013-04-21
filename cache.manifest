@@ -2,7 +2,8 @@ CACHE MANIFEST
 
 images/lsp-logo.png?[[version]]
 images/lsp-logo@2x.png?[[version]]
-images/bg.png?[[version]]
+images/bg.jpg?[[version]]
+images/texture-jeans-dark.png?[[version]]
 scripts/jquery.min.js?[[version]]
 scripts/jquery.mobile-1.3.1.min.js?[[version]]
 styles/site.css?[[version]]
@@ -38,5 +39,10 @@ images/speakers/travis.swicegood.jpg?[[version]]
 images/speakers/vance.lucas.jpg?[[version]]
 styles/add2home.css?[[version]]
 scripts/add2home.js?[[version]]
+
+//fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700,300|Sanchez
+//themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff
+//themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff
+//themes.googleusercontent.com/static/fonts/sanchez/v1/9T6om-IyqE2CuKLLQr0lcgLUuEpTyoUstqEm5AMlJo4.woff
 
 #version[[version]]
