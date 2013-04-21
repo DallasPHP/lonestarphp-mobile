@@ -23,9 +23,8 @@
     <script src="scripts/jquery.min.js?<?php echo $version; ?>"></script>
     <script>
         $(document).bind("mobileinit", function(){
-            $.extend($.mobile, {
-                defaultPageTransition: 'slide'
-            });
+            $.mobile.defaultPageTransition = 'slide';
+            $.mobile.buttonMarkup.hoverDelay = 25;
         });
     </script>
     <script src="scripts/jquery.mobile-1.3.1.min.js?<?php echo $version; ?>"></script>
