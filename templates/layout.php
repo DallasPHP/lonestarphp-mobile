@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Lone Star PHP 2013</title>
     <link rel="stylesheet" href="styles/themes/lsp13/lsp13.min.css?<?php echo $version; ?>" />
-    <link rel="stylesheet" href="styles/themes/default/jquery.mobile.structure-1.3.0.min.css?<?php echo $version; ?>" />
+    <link rel="stylesheet" href="styles/themes/default/jquery.mobile.structure-1.3.1.min.css?<?php echo $version; ?>" />
     <link rel="stylesheet" href="styles/site.css?<?php echo $version; ?>" />
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700,300|Sanchez' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="styles/add2home.css?<?php echo $version; ?>" />
@@ -28,7 +28,7 @@
             });
         });
     </script>
-    <script src="scripts/jquery.mobile-1.3.0.min.js?<?php echo $version; ?>"></script>
+    <script src="scripts/jquery.mobile-1.3.1.min.js?<?php echo $version; ?>"></script>
 
     <meta name="apple-mobile-web-app-title" content="#lsp13">
     <meta name="apple-mobile-web-app-capable" content="yes">

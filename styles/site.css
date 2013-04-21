@@ -39,14 +39,14 @@
     border: 1px solid #bd3926;
     background: #bd3926;
     color: #fff;
-	text-shadow: 0 /*{c-bar-shadow-x}*/ 0 /*{c-bar-shadow-y}*/ 0 /*{c-bar-shadow-radius}*/ #ffffff /*{c-bar-shadow-color}*/;
+	text-shadow: 0 0 0 #ffffff;
 }
 .ui-btn-hover-b,
 .ui-btn-hover-b:hover {
     border: 1px solid #bd3926;
     background: #bd3926;
     color: #fff;
-	text-shadow: 0 /*{c-bar-shadow-x}*/ 0 /*{c-bar-shadow-y}*/ 0 /*{c-bar-shadow-radius}*/ #ffffff /*{c-bar-shadow-color}*/;
+	text-shadow: 0 0 0 #ffffff;
     background-image: none;
 }
 
@@ -67,7 +67,7 @@
 
 /* ** HOME ** */
 .ui-page {
-    background-image: url(../images/bg.jpg?1);
+    background-image: url(../images/bg.jpg?2);
     background-size: 241px 241px;
 }
 
@@ -76,7 +76,7 @@
     display: block;
     margin:0;
     padding:0;
-    background: url(../images/lsp-logo.png?1) top center no-repeat;
+    background: url(../images/lsp-logo.png?2) top center no-repeat;
     
     height: 143px;
 }
@@ -84,12 +84,12 @@
 @media screen and (-webkit-min-device-pixel-ratio: 1.5) {
 
     .ui-page {
-        background-image: url(../images/bg.jpg?1);
+        background-image: url(../images/bg.jpg?2);
         background-size: 120px 120px;
     }
 
     #home .logo {
-        background: url(../images/lsp-logo@2x.png?13) top center no-repeat;
+        background: url(../images/lsp-logo@2x.png?23) top center no-repeat;
         background-size: 175px 143px;
     }
 }
@@ -206,7 +206,6 @@
 
 .speaker-page .details .social {
     margin-top: 15px;
-    margin-left: 15px;
 }
 
 .speaker-page .details .social a {
