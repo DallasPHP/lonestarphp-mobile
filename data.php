@@ -57,15 +57,15 @@ $data = array(
     		"description" => "Adam Culp (@adamculp), organizer of the SunshinePHP Developer Conference and South Florida PHP Users Group (SoFloPHP) where he speaks regularly, is a Zend Certified PHP 5.3 Engineer.  Adam is passionate about developing with PHP and enjoys helping others write good code, implement standards, refactor efficiently, and incorporate unit and functional tests into their projects.  When he is not coding or contributing to various developer communities, and he can be found hiking around the United States National Parks, teaching judo, or participating in long distance running.",
     		"talks" => array(7,8)
     	),
-    	'7' => array(
-    		"name" => "Rafael Dohms",
-    		"image" => "images/speakers/rafael.dohms.jpg",
-    		"company" => null,
-    		"twitter" => "rdohms",
-    		"website" => "http://doh.ms",
-    		"description" => "Rafael Dohms is an experienced PHP Developer, Evangelist, Speaker and Contributor. During his years of experience he has become an active member of the community and founded 3 User Groups. He moved to the Netherlands to integrate the WEBclusive team and share his passion for code quality and innovation in the Crowd funding world. In his spare time he also helps manage the AmsterdamPHP User Group, amongst other projects.",
-    		"talks" => array(9,10)
-    	),
+        // '7' => array(
+        //     "name" => "Rafael Dohms",
+        //     "image" => "images/speakers/rafael.dohms.jpg",
+        //     "company" => null,
+        //     "twitter" => "rdohms",
+        //     "website" => "http://doh.ms",
+        //     "description" => "Rafael Dohms is an experienced PHP Developer, Evangelist, Speaker and Contributor. During his years of experience he has become an active member of the community and founded 3 User Groups. He moved to the Netherlands to integrate the WEBclusive team and share his passion for code quality and innovation in the Crowd funding world. In his spare time he also helps manage the AmsterdamPHP User Group, amongst other projects.",
+        //     "talks" => array(9,10)
+        // ),
     	'8' => array(
     		"name" => "Ashe Dryden",
     		"image" => "images/speakers/ashe.dryden.jpg",
@@ -82,7 +82,7 @@ $data = array(
     		"twitter" => "funkatron",
     		"website" => "http://funkatron.com",
     		"description" => "With over 15 years of passionate web development experience and open source advocacy, Ed Finkler loves empowering people through technology. He’s excited about creating things and sharing them with the world.\nHe served as web lead and security researcher at The Center for Education and Research in Information Assurance and Security (CERIAS) at Purdue University for 9 years. More recently, he has been helping startup teams build exciting e-commerce, social sharing, and mapping systems. He’s a proud member of the Fictive Kin team, working on Done Not Done, Gimme Bar, and lots of other cool stuff.\nEd spends much of his free time creating and working on open source projects such as Spaz, a long-running, award winning microblogging client. Ed also created the PHP libraries like FUnit, Resty.php, PHPSecInfo, and Inspekt.",
-    		"talks" => array(12)
+    		"talks" => array(12,9)
     	),
     	'10' => array(
     		"name" => "Matt Frost",
@@ -100,7 +100,7 @@ $data = array(
     		"twitter" => "Crell",
     		"website" => "http://www.garfieldtech.com/",
     		"description" => "Larry Garfield has been building web sites since he was a sophomore in high school, which is longer ago than he'd like to admit. As a freelancer he worked mostly for Chicago-area politicians before graduating to full time consulting with Palantir.net.  At Palantir Larry is a Senior Architect and Consultant, developing solutions for medium to large cultural institutions.\nLarry is an active Drupal core contributor, including the principle architect and maintainer of the Drupal 7 database system and the person most to blame for Drupal 8's shift toward object-oriented development and the Symfony2 framework.  Larry holds a Master’s degree in Computer Science from DePaul University.\nLarry is a co-author of \"Drupal 7 Module Development\" from Packt Publishing, and has also been published in Drupal Watchdog. He blogs at both http://www.palantir.net/ and http://www.garfieldtech.com/.",
-    		"talks" => array(14)
+    		"talks" => array(14,10)
     	),
     	'12' => array(
     		"name" => "Pablo Godel",
@@ -110,6 +110,15 @@ $data = array(
     		"website" => "http://blog.servergrove.com",
     		"description" => "Pablo Godel is Co-founder of ServerGrove, PHP & Symfony developer, and contributor to many open source projects . In his leisure time he likes to spend his time with his family, travel and sailing.",
     		"talks" => array(15)
+    	),
+    	'24' => array(
+    		"name" => "Jason Johnson",
+    		"image" => "images/speakers/jason.johnson.jpg",
+    		"company" => null,
+    		"twitter" => "jason_johnson",
+    		"website" => "http://www.softlayer.com/",
+    		"description" => "Jason Johnson is a Software Engineer at SoftLayer. With over 10 years of experience in software development, Jason specializes in programming language research and system design.",
+    		"talks" => array(31)
     	),
     	'13' => array(
     		"name" => "Juozas Kaziukėnas",
@@ -201,6 +210,15 @@ $data = array(
     		"description" => "Eli has been building Web Applications for over 18 years and fell in love with PHP the day that PHP 4 was released. Since then he's been a strong advocate for PHP and used it in every project he's work on.  He is currently a Founding Partner & CTO of Musketeers.me, and the Managing Editor of php|architect magazine. He is also an avid writer (blogs, articles and books), and has spoken at numerous conferences.",
     		"talks" => array(29)
     	),
+    	'23' => array(
+    		"name" => "Dustin Whittle",
+    		"image" => "images/speakers/dustin.whittle.jpg",
+    		"company" => null,
+    		"twitter" => "dustinwhittle",
+    		"website" => "http://dustinwhittle.com/",
+    		"description" => "Dustin Whittle is a Developer Evangelist at AppDynamics where he focuses on helping organizations manage application performance. Before joining AppDynamics, Dustin was CTO at Kwarter, a consultant at SensioLabs, and developer evangelist at Yahoo!. He has experience building and leading engineering teams and working with developers and partners to scale to meet demand. When Dustin isn't working he enjoys flying, sailing, diving, golfing, and travelling around the world.",
+    		"talks" => array(30)
+    	),
     ),
     'talks' => array(
     	'1' => array(
@@ -208,7 +226,7 @@ $data = array(
     		"presenter" => "Omni Adams",
     		"description" => "Phing is a build system that lets you do all sorts of neat things quickly and easily. If you find yourself manually running complicated processes or frequently having to look up command line parameters for your tools, Phing can help make you more efficient. If your deployments have many error-prone steps or you find yourself dealing with fragile procedures, Phing can help keep your sanity.",
     		"room" => "Acacia",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8681",
     		"date" => "2013-06-28",
     		"time" => "1430"
     	),
@@ -217,7 +235,7 @@ $data = array(
     		"presenter" => "Neal Anders",
     		"description" => "This presentation will cover the Secure Software Development Lifecycle, including requirements and design, development, testing, and acceptance. We will touch on topics such as implementing 'Least Privilege', 'Policies and Standards', and 'Defensive Coding Practices'. There will also be discussion on operational aspects and risk mitigation.",
     		"room" => "Acacia",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8682",
     		"date" => "2013-06-28",
     		"time" => "0930"
     	),
@@ -226,7 +244,7 @@ $data = array(
     		"presenter" => "Jeff Carouth",
     		"description" => "You know testing is beneficial to your project. You are familiar with merits and caveats of test-driven development. But the project you’re hacking on right now is what most would call a legacy application. How do you apply your test knowledge to an application that doesn’t lend itself to traditional unit testing? The answer most will give is, “you don’t,” but we’re going to look at ways to write tests now that will allow you to improve and refactor your application to evolve the code to a more manageable state. The traditional “easy” route to dealing with legacy code is to rewrite but a little patience and skill applied to writing tests will yeild better results.",
     		"room" => "Sycamore",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8683",
     		"date" => "2013-06-28",
     		"time" => "1430"
     	),
@@ -235,7 +253,7 @@ $data = array(
     		"presenter" => "Jeff Carouth",
     		"description" => "When approaching JavaScript as a PHP developer some of the nuances of the language take a while to become comfortable. If you've ever wondered how context and the this keyword work, when to declare a variable, how to create objects and use prototypes in JavaScript, you are not alone. These concepts seems crazy at first, but with some examples you can grasp and use them in your code today. This session will cover the finer points of JavaScript the language from the perspective of someone who is proficient with PHP or another language.",
     		"room" => "Sycamore",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8684",
     		"date" => "2013-06-29",
     		"time" => "1330"
     	),
@@ -244,7 +262,7 @@ $data = array(
     		"presenter" => "Keith Casey",
     		"description" => "Stateless.. Nouns & Verbs.. Idempotent.. HTTP Auth.. Tokens.. We’ve all heard those phrases thrown around when we talk about REST. We’ve been told our systems have to include these characteristics or they’re not RESTful. We’ve talked over and over again on how to implement them. Unfortunately, somewhere along the way, we lost the answer to “why?” What’s the point? What value do we gain by doing things the “right” way?",
     		"room" => "Sycamore",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8708",
     		"date" => "2013-06-29",
     		"time" => "1430"
     	),
@@ -253,7 +271,7 @@ $data = array(
     		"presenter" => "Jeremy Cook",
     		"description" => "The log files our applications produce contain a wealth of information about how things are performing at any moment, yet for many of us the only time we look at them is when our we're trying to diagnose problems during an outage. Wouldn't it be great if our log files could be mined in real time and even alert us before things get to a critical state? This talk will show you exactly how to do that using open source tools. We'll look at using software such as Monolog and Rsyslog to collect information from individual servers as well as Graylog2 to aggregate, store and make quickly searchable millions of log records from multiple sources. By the end of this talk you'll have the knowledge required to mine your log data in real time, helping you to avoid major problems.",
     		"room" => "Acacia",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8686",
     		"date" => "2013-06-29",
     		"time" => "1330"
     	),
@@ -262,7 +280,16 @@ $data = array(
     		"presenter" => "Adam Culp",
     		"description" => "Adam Culp will talk about refactoring code. (The practice of altering code to make it cleaner, simpler, and sometimes faster, while not sacrificing functionality.) We all hate to do it, but it is a necessary evil. So lets talk about how to do it better. Adam will discuss: When to refactor. How to refactor. Why to refactor. How a refactor can help us write better code in the future. A common methodology and steps to follow while refactoring. Resources to help us all on our refactor journey.",
     		"room" => "Sycamore",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8687",
+    		"date" => "2013-06-29",
+    		"time" => "1030"
+    	),
+    	'31' => array(
+    		"title" => "Exploiting your File System to Build Robust & Efficient Workflows",
+    		"presenter" => "Jason Johnson",
+    		"description" => "If your software writes to disk, you can never know too much about your file system! File systems offer a feature set often replicated, usually with lesser performance and reliability. In this talk, we will cover the file system notification infrastructure, locking and movement guarantees, and performance tuning. We will also cover how the primitive mechanisms available through file systems can be used to develop robust complex workflows.",
+    		"room" => "Acacia",
+    		"joindin" => "https://joind.in/8894",
     		"date" => "2013-06-29",
     		"time" => "1030"
     	),
@@ -271,25 +298,25 @@ $data = array(
     		"presenter" => "Adam Culp",
     		"description" => "You have been wanting to use the \"new shiny\", but there are too many \"Git how-tos\" out there and you don't kow where to start. This is not another one of those. Instead Adam Culp will give a practical walk through the development cycle and how to use Git as the source control. From initialization of a repository, to forking, cloning, and checkout, we will walk through a sample project and how most developers actually use Git to manage the workflow. Adam will also touch on how to use Git repository hosting providers, and how to use them with PAAS (Platform as a service) providers.",
     		"room" => "Sycamore",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8688",
     		"date" => "2013-06-28",
     		"time" => "1630"
     	),
     	'9' => array(
-    		"title" => "Your code sucks, let's fix it",
-    		"presenter" => "Rafael Dohms",
-    		"description" => "Performance and testing are just one aspect of code, to really be successful your code needs to be readable, maintainable and generally easier to comprehend and work with. This talk draws from my own experience in applying the techniques of object calisthenics and code readability, within an existing team. It will help you identify trouble areas, learn how to refactor them and train you to write better code in future projects avoiding common pitfalls.",
+    		"title" => "Open Sourcing Mental Illness",
+    		"presenter" => "Ed Finkler",
+    		"description" => "In the spirit of open source, I’d like to shine a spotlight on depression. Not because it’s easy, but because it’s important. Mental illness affects many of us, but the stigma attached to it dissuades most people from talking about it openly. That’s not how we make progress. With this talk, I want to do my part.\n\nI was diagnosed with depression and anxiety when I was thirteen, and I’ve been struggling with it my whole life. In this talk, I’ll discuss how it has impacted my work as a developer, husband, and father.\n\nBy speaking openly about my own challenges and successes, I hope those struggling with mental illness will learn how to be happier and more productive, and others can better understand how to be helpful and supportive.",
     		"room" => "Sycamore",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8689",
     		"date" => "2013-06-29",
-    		"time" => "1330"
+    		"time" => "1430"
     	),
     	'10' => array(
-    		"title" => "Composer for busy developers",
-    		"presenter" => "Rafael Dohms",
-    		"description" => "Managing dependencies and third-party code in PHP applications is a daily challenge, keeping everyone on the same versions during development and at deploy time a struggle. Meet Composer a tool designed to help you maintain a consistent set of dependencies  as well as share and discover new libraries. Let's see how you can use this tool in your Applications and Libraries to wrangle your dependencies with a simple json configuration file and a command line interface.",
+    		"title" => "Composer: Share all the things!",
+    		"presenter" => "Larry Garfield",
+    		"description" => "For years, PHP has struggled with dependencies.  Third party libraries may do great things, but if they're a pain to leverage who's going to bother?\n\nEnter Composer, one of the key enablers of the New PHP World Order. Composer is a tool to maintain, track, and manage dependencies in a consistent, predictable, and fun way.  More than that, though, it's a platform for enabling more cross-project sharing than ever before; even sharing your own code with others.\n\nThis session will introduce Composer and its related tools and demonstrate how you can use it to enable your own applications and libraries to share and be shared more broadly than ever before.",
     		"room" => "Sycamore",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8690",
     		"date" => "2013-06-28",
     		"time" => "1030"
     	),
@@ -298,7 +325,7 @@ $data = array(
     		"presenter" => "Ashe Dryden",
     		"description" => "It's been scientifically proven that more diverse communities and workplaces create better products and the solutions to difficult problems are more complete and diverse themselves. Companies are struggling to find adequate talent. So why do we see so few women, people of color, and LGBTQ people at our events and on the about pages of our websites? Even more curiously, why do 60% of women leave the tech industry within 10 years? Why are fewer women choosing to pursue computer science and related degrees than ever before? Why have stories of active discouragement, dismissal, harassment, or worse become regular news?\nIn this talk we’ll examine the causes behind the lack of diversity in our communities, events, and workplaces. We’ll discuss what we can do as community members, event organizers, and co-workers to not only combat this problem, but to encourage positive change by contributing to an atmosphere of inclusivity.\nObjectives:\n-Educate about the lack of diversity and why it is a problem\n-Examine what is contributing to both the pipeline issue as well as attrition\n-Isolate what is and isn't working\n-Inspire direct action by examining our own behavior and learning more about the people around us so we can empathize better",
     		"room" => "Acacia",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8691",
     		"date" => "2013-06-28",
     		"time" => "1630"
     	),
@@ -307,16 +334,25 @@ $data = array(
     		"presenter" => "Edward Finkler",
     		"description" => "Some people will tell you that you need a large, full-stack framework to do web development The Right Way. These people are wrong.\nA year ago I wrote The MicroPHP Manifesto, a response to the increasing complexity and interdependence of PHP frameworks. The four principles were:\n1. I am a PHP developer\n2. I like building small things\n3. I want less code, not more\n4. I like simple, readable code\nThe thing is, this stuff really isn't specific to PHP. In this talk I'll extend the concepts to other languages we work with in web development, establishing these core principles:\n- Learn languages, not frameworks\n- Build small things\n- Less code is better than more\n- Create and use simple, readable code\nWe'll cover how following these principles makes you a better developer, and makes the job of maintaining and verifying your code much easier.",
     		"room" => "Acacia",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8692",
     		"date" => "2013-06-28",
     		"time" => "1430"
+    	),
+    	'30' => array(
+    		"title" => "Scaling PHP in the real world!",
+    		"presenter" => "Dustin Whittle",
+    		"description" => "PHP is used by the likes of Facebook, Yahoo!, Zynga, Tumblr, Etsy, and Wikipedia. How do the largest internet companies scale PHP to meet their demand? Join this session and find out how to use the latest tools in PHP for developing high performance applications. We’ll take a look at common techniques for scaling PHP applications and best practices for profiling and optimizing performance. After this session, you’ll leave prepared to tackle your next enterprise PHP project. \n\n- Why performance matters?\n- The problems with PHP\n- Best practice designs\n- Doing work in the background with queues\n- Fronting with http caching and a reverse proxy cache\n- Distributed data caches with redis and memcached\n- Using the right tool for the job\n- Tools of the trade\n- Opcode Caches\n- Varnish/Squid and reverse proxy caches\n- Xdebug + Valgrind + WebGrind\n- AppDynamics \n- Architecture not applications",
+    		"room" => "Sycamore",
+    		"joindin" => "https://joind.in/8893",
+    		"date" => "2013-06-28",
+    		"time" => "1130"
     	),
     	'13' => array(
     		"title" => "Mocking Dependencies in PHPUnit",
     		"presenter" => "Matt Frost",
     		"description" => "Writing good unit tests is nearly impossible with out being able to mock your dependencies. This talk will cover why you should mock, when you should mock and a practical approach on how to mock. Learning to mock will add value to your tests as well as your application.",
-    		"room" => "Sycamore",
-    		"joindin" => null,
+    		"room" => "Acacia",
+    		"joindin" => "https://joind.in/8693",
     		"date" => "2013-06-28",
     		"time" => "1130"
     	),
@@ -325,7 +361,7 @@ $data = array(
     		"presenter" => "Larry Garfield",
     		"description" => "Code that talks only to itself is not useful to anyone. Code that enables other code magnifies its power 10-fold.\nBut how do we enable other code, and those who write it? What makes a module extensible? What is that vague extra something that turns merely extensible code into an API, a library, and a cornerstone of other systems? How do we harness that power for ourselves?\nLet us examine the Aphorisms of Good API design, and the 8-Fold Path of API Nirvana.\nThis session goes beyond how to write code well to cover the question of how to write libraries that spawn other libraries and innovation by Coding for the Future.",
     		"room" => "Acacia",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8694",
     		"date" => "2013-06-29",
     		"time" => "1430"
     	),
@@ -334,7 +370,7 @@ $data = array(
     		"presenter" => "Pablo Godel",
     		"description" => "AngularJS is a new JavaScript framework, backed by Google, for building powerful, complex and rich client-side web applications. We will go over the features and basics of building a web application with AngularJS and we will demonstrate how to communitate with a REST server built with PHP.",
     		"room" => "Acacia",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8695",
     		"date" => "2013-06-28",
     		"time" => "1330"
     	),
@@ -343,7 +379,7 @@ $data = array(
     		"presenter" => "Pablo Godel",
     		"description" => "A PHP/web developer is not complete without knowing server administration. When looking for a job, it is quite likely that you will be required to know about installing and configuring a LAMP (Linux, Apache, MySQL and PHP). Your prospects of getting that job are much higher when you know these. In this session we will cover: - Introduction to LAMP servers - Frequently used Unix commands - Linux distro Differences - Prepare your LAMP server before going live - Overall LAMP Security - Performance tips to improve your website speed - Compiling PHP from source. Adding PHP extensions. - Basic description of web hosting options for PHP.",
     		"room" => "Acacia",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8696",
     		"date" => "2013-06-29",
     		"time" => "0930"
     	),
@@ -352,7 +388,7 @@ $data = array(
     		"presenter" => "Juozas Kaziukėnas",
     		"description" => "Applications are complicated structures, usually consisting of a lot of moving parts and thus it's not so easy to tell if an app is not functioning properly. Luckily nowadays there are tools to monitor applications in production to both detect code level problems and most importantly also business-logic level problems. Let's look at various different tools to record and analyze metrics and how this could be useful to make sure an application is running correctly and a recent commit hasn't decreased it's performance.",
     		"room" => "Acacia",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8697",
     		"date" => "2013-06-29",
     		"time" => "1530"
     	),
@@ -361,7 +397,7 @@ $data = array(
     		"presenter" => "Juozas Kaziukėnas",
     		"description" => "Setting up a LAMP environment might be the first thing you learn, but I'm going to argue that setting up LAMP on your laptop is hardly the best way to work. Using virtualization and automation tools you can simplify the process and also have better control of what your colleagues are using and even what's running in production. Plus a ton more awesome features you get for free. This is going to open your eyes a bit, I hope.",
     		"room" => "Acacia",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8698",
     		"date" => "2013-06-28",
     		"time" => "1430"
     	),
@@ -370,7 +406,7 @@ $data = array(
     		"presenter" => "Vance Lucas",
     		"description" => "Frisby.js is a REST API testing framework built on node.js and Jasmine that makes testing API endpoints easy, fast, and fun. Use Frisby to step in the shoes of your developer community and ensure consistency in API response structures, keys, and types. Great for ensuring your APIs don’t change or break across versions, and remain reliable and consistent so your developer community can thrive.\nThis talk will focus on the benefits of API endpoint testing with Frisby, its syntax and methods, live usage demonstration, recommended project setup and folder structure, and usage with GitHub so users can help identify and report issues with your API.",
     		"room" => "Sycamore",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8699",
     		"date" => "2013-06-28",
     		"time" => "1530"
     	),
@@ -379,7 +415,7 @@ $data = array(
     		"presenter" => "Bob Majdak",
     		"description" => "Taking a step back from traditional application structures like MVC, this talk will cover the ins and outs of how a system built on events (or signals) is structured, built, and executed. We will analyze what exactly all programs must do to to be able to serve a response to a request and how building an event oriented system is more or less playing Feng Shui with code. In addition this talk will glance the topics of namespaces and autoloading and how we can leverage modern PHP features to achieve our goal",
     		"room" => "Acacia",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8700",
     		"date" => "2013-06-28",
     		"time" => "1030"
     	),
@@ -388,7 +424,7 @@ $data = array(
     		"presenter" => "Derick Rethans",
     		"description" => "The web is full of advice focussed on improving performance.  Before you can\noptimise however, you need to find out if your code is actually slow; then you\nneed to understand the code; and then you need to find out what you can \noptimise.\nThis talk introduces tools and concepts to find performance issues with your\nweb application, and stack.",
     		"room" => "Sycamore",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8701",
     		"date" => "2013-06-28",
     		"time" => "0930"
     	),
@@ -397,16 +433,16 @@ $data = array(
     		"presenter" => "Derick Rethans",
     		"description" => "PHP has powerful date/time handling functionality. It allows you to deal with\nmany issues that arise when you are developing applications. This talk will\ncover advanced functionality and is not an introduction except for where\nthis is necessary. I will cover dealing with timezones, calculations with\nDateTime objects and tips and tricks for dealing with storing date/time\ninformation.",
     		"room" => "Sycamore",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8702",
     		"date" => "2013-06-29",
     		"time" => "1130"
     	),
     	'23' => array(
-    		"title" => "MySQL Minutiae",
+    		"title" => "Introduction to Databases",
     		"presenter" => "Davey Shafik",
-    		"description" => "We all ignore the edge cases, till we find ourselves dealing with them. This talk will cover what table engines are available to you, what they do, and when to use them.\nWhen might you want to use BLACKHOLE, and send all your data to /dev/null? What about using CSV files? Perhaps you want to do FULLTEXT searches without losing support for transactions? Graph theory, memory tables, and merges oh my!\nFind out the answer to these questions and more in this talk.",
+    		"description" => "This talk will cover the basics necessary to help you decide what data to store, where, and how.\n\nWe will cover PDO — PHP’s Data Object extension, which allows you to talk to a variety of databases, including MySQL.\n\nYou will learn how to CRUD — Create, Retrieve, Update and Delete data, database schema, and when to use indexes.\n\nAdditionally, we will look at other data storage systems such as memcache, and nosql databases.",
     		"room" => "Foundations Track",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8703",
     		"date" => "2013-06-28:Foundations Track",
     		"time" => "1330"
     	),
@@ -415,7 +451,7 @@ $data = array(
     		"presenter" => "Travis Swicegood",
     		"description" => "HTTP is no longer simply powering browsers talking to servers sending static pages of HTML. HTTP is carrying HTML to dumb browsers, JSON back to single-page apps or mobile apps, and is now pushing data to clients of all stripes. This talk introduces you to architect your infrastructure in a way to make sure that you can meet the needs of tomorrow.",
     		"room" => "Sycamore",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8727",
     		"date" => "2013-06-28",
     		"time" => "1330"
     	),
@@ -424,7 +460,7 @@ $data = array(
     		"presenter" => "Laura Thomson",
     		"description" => "For the last twelve years I've been giving conference talks and writing books about how to develop for the web in PHP. Over that time I’ve made a bunch of recommendations: some still hold true, and some things have changed quite a bit since 2000.\nIn this session we’ll run through an overview of today’s best practices compared to those from the past. We’ll cover:\n- Using frameworks: We used to avoid them like the plague. Is that still true?\n- Scaling principles: In the good old days it was all master-slave replication and memcache. Will that still work? What else can we do?\n- Security: Is it still good enough to use magic quotes? (Hint: No.) What should you be doing instead?\n- Application architectures: Can you still just store everything in MySQL? When is a NoSQL data store a best practice? What about queues?\n- Language changes: In 2000 namespaces weren’t even on the radar. Do we really need all this new stuff that’s in PHP 5.3 and 5.4? What is it good for?\n- I heard PHP is dead and we should all just switch to Python or Ruby. Is that true?",
     		"room" => "Sycamore",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8728",
     		"date" => "2013-06-29",
     		"time" => "1630"
     	),
@@ -433,7 +469,7 @@ $data = array(
     		"presenter" => "Beth Tucker Long",
     		"description" => "Not everyone has access to a user interface designer, but that doesnâ??t mean that usability is out of your reach. This talk will cover user experience basics along with simple, easy-to-implement tricks to improve usability. This talk will also cover ways to test if your site or application is making the grade.",
     		"room" => "Sycamore",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8729",
     		"date" => "2013-06-29",
     		"time" => "0930"
     	),
@@ -442,7 +478,7 @@ $data = array(
     		"presenter" => "Beth Tucker Long",
     		"description" => "A building works better with a solid foundation beneath it. The same is true for PHP. Whether you are new to programming or are just looking for a refresher, this session will take you through the basics. Beth Tucker Long will cover strings and arrays, conditions and loops, sessions and cookies, form validation and security, and writing your own functions. Best of all, Beth won't just talk about these concepts, she'll go through actual code, so you can see them in action. Bring your laptop, follow along, and you'll have a working application when you leave. Questions are welcomed!",
     		"room" => "Foundations Track",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8730",
     		"date" => "2013-06-28:Foundations Track",
     		"time" => "0930"
     	),
@@ -451,7 +487,7 @@ $data = array(
     		"presenter" => "Matthew Turland",
     		"description" => "While the object-oriented programming paradigm dates back to the beginning of the likes of Simula and Smalltalk, it's present in some form or another in most mainstream programming languages used for web development today. Among these is that of PHP, which saw an overhaul of its object system in version 5 and a number of additions in the more recent releases of 5.3 and 5.4. This presentation covers both general concepts related to object-oriented programming as well as the ins and outs of PHP's OOP implementation. The four main principles of OOP - abstraction, inheritance, encapsulation, and polymorphism - are reviewed as well defining and instantiating classes, abstract classes, interfaces, magic methods, autoloading classes, and more.",
     		"room" => "Foundations Track",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8731",
     		"date" => "2013-06-28:Foundations Track",
     		"time" => "1100"
     	),
@@ -460,7 +496,7 @@ $data = array(
     		"presenter" => "Eli White",
     		"description" => "This talk will focus on XSS, CSRF, Session Hijacking, SQL Injection, and other security vulnerabilities that need addressed in Website Development.  This talk will cover a gambit of these issues, giving specific code examples showing what the vulnerabilities look like and how to identify them.  It will then present solutions to close them down and protect yourself.",
     		"room" => "Foundations Track",
-    		"joindin" => null,
+    		"joindin" => "https://joind.in/8732",
     		"date" => "2013-06-28:Foundations Track",
     		"time" => "1500"
     	),
@@ -494,7 +530,7 @@ $data = array(
             '1130' => array(
                 'end' => '1220',
                 'type' => 'Session',
-                'talks' => array(12),
+                'talks' => array(30,12),
                 'room' => null,
             ),
             '1220' => array(
@@ -576,7 +612,7 @@ $data = array(
             '1030' => array(
                 'end' => '1120',
                 'type' => 'Session',
-                'talks' => array(7),
+                'talks' => array(7,31),
                 'room' => null,
             ),
             '1130' => array(

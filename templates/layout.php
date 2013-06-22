@@ -60,9 +60,8 @@
             <li><a href="#schedule">Schedule</a></li>
             <li><a href="#sessions">Session List</a></li>
             <li><a href="#speakers">Speakers</a></li>
+            <li data-icon="star"><a href="https://joind.in/event/lsp13" target="_blank">Joind.in</a></li>
         </ul>
-        
-        
         
     </div>
 </div>

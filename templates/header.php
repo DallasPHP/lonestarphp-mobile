@@ -1,4 +1,4 @@
-<div data-role="header" data-theme="a">
+<div data-role="header" data-theme="a" data-position="fixed">
     <?php if (isset($back)): ?>
         <a href="<?php echo $back; ?>" data-direction="reverse" data-icon="arrow-l" data-mini="true">Back</a>
     <?php endif; ?>
