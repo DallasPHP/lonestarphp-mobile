@@ -109,7 +109,7 @@ $data = array(
     		"twitter" => "pgodel",
     		"website" => "http://blog.servergrove.com",
     		"description" => "Pablo Godel is Co-founder of ServerGrove, PHP & Symfony developer, and contributor to many open source projects . In his leisure time he likes to spend his time with his family, travel and sailing.",
-    		"talks" => array(15)
+    		"talks" => array(15,16)
     	),
     	'24' => array(
     		"name" => "Jason Johnson",
