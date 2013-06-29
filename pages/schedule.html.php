@@ -69,6 +69,16 @@ $('#schedule').on('pageinit', function(){
     } else {
         $('#schedule .day').first().trigger('expand');
     }
+
+    var selector = 'div[data-role="page"].session-page';
+    $('a.previous').on('click', function(){
+        $.mobile.changePage($(this).parents(selector).prev(selector));
+    });
+    $('a.next').on('click', function(){
+        $.mobile.changePage($(this).parents(selector).next(selector));
+    });
+    $('a.previous:first').hide();
+    $('a.next:last').hide();
 });
 </script>
 
@@ -95,8 +105,16 @@ $('#schedule').on('pageinit', function(){
             <?php print render('templates/header.php', array('title' => date('l', $date), 'back' => '#schedule')); ?>
             <div data-role="content">
 
-                <div class="time-heading">
+                <div class="ui-grid-b time-heading">
+                    <div class="ui-block-a">
+                        <a class="previous" data-icon="arrow-l" data-inline="true" data-mini="true" data-role="button">Previous</a>
+                    </div>
+                    <div class="ui-block-b">
                     <?php echo date('g:i A', $time); ?><?php echo $end ? ' - ' . date('g:i A', $end) : '' ?>
+		    </div>
+                    <div class="ui-block-c">
+                        <a class="next" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-mini="true" data-role="button">Next</a>
+                    </div>
                 </div>
         
                 <?php foreach ($timeslot['talks'] as $talkId): $talk = $data['talks'][$talkId]; ?>
